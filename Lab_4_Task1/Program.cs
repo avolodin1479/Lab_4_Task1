@@ -11,12 +11,13 @@ namespace Lab_4_Task1
         static void Main(string[] args)
         {
             Console.WriteLine("Введите целое положительное число");
-            int n = Convert.ToInt32(Console.ReadLine());
-            int b=0
+            int N = Convert.ToInt32(Console.ReadLine());
+            int b = 1;
 
-            for (int i = 0; i <= n; i++)
+            for (int i = 0; i <= N; i++)
             {
-                Console.WriteLine("Квадрат {0} равен {1}", i, i+=1 + (i*2-1));
+                b = b + (2 * i - 1);
+                Console.WriteLine("Квадрат {0} равен {1}", i, b); 
             }
 
             Console.ReadKey();
